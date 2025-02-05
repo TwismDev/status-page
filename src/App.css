@@ -1,0 +1,254 @@
+/* App.css */
+
+/* Global Styles */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Top Banner (e.g. All Systems Operational) */
+.top-banner {
+  text-align: center;
+  padding: 0.75rem 0;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Example states for the banner (you can apply them conditionally) */
+.banner-operational {
+  background-color: #28a745; /* green */
+}
+.banner-partial {
+  background-color: #ffc107; /* yellow/orange */
+}
+.banner-outage {
+  background-color: #dc3545; /* red */
+}
+
+/* Header */
+.header {
+  position: relative;
+  background-color: #2d2d2d;
+  color: #fff;
+  text-align: center;   /* centers the heading */
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  padding: 1rem 2rem;   /* some padding around */
+}
+
+/* Pin the .header-logo absolutely in the top-left corner */
+.header-logo {
+  position: absolute;
+  top: 25%;            /* vertically center relative to .header’s height */
+  left: 0.5rem;          /* how far from the left edge */
+  transform: translateY(-50%); /* shift up half its own height */
+}
+
+/* Restrict SVG size */
+.header-logo svg {
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Service Group Title */
+.service-group-title {
+  margin: 1.5rem 0 0.5rem 0;
+  margin-bottom: 1rem;
+  justify-content: center;
+  display: flex;
+}
+
+/* Status List */
+.status-list {
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.status-list-item:last-child {
+  border-bottom: none;
+}
+
+.service-name {
+  font-weight: bold;
+}
+
+/* Status Badge */
+.status {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.status.online {
+  background-color: #28a745;
+}
+
+.status.offline {
+  background-color: #dc3545;
+}
+
+.status.maintenance {
+  background-color: #ffc107;
+}
+
+/* Subscribe Button */
+.subscribe-btn {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  display: block;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+  text-align: center;
+  width: fit-content;
+}
+
+.subscribe-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 4px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-actions button {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form-actions .submit-btn {
+  background-color: #28a745;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.form-actions .submit-btn:hover {
+  background-color: #218838;
+}
+
+.form-actions .cancel-btn {
+  background-color: #dc3545;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.form-actions .cancel-btn:hover {
+  background-color: #c82333;
+}
+
+/* Issues Log */
+.issues-log {
+  margin-top: 2rem;
+}
+
+.issues-log h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.issues-log ul {
+  list-style: none;
+  padding: 0;
+}
+
+.issues-log li {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.issue-date {
+  font-weight: bold;
+}
+
+.issue-desc {
+  font-size: 0.9rem;
+  color: #666;
+}
