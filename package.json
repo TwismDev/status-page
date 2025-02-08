@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@supabase/auth-ui-react": "^0.4.7",
+    "@supabase/auth-ui-shared": "^0.1.8",
+    "@supabase/supabase-js": "^2.48.1",
     "axios": "^1.7.9",
     "cra-template": "1.2.0",
+    "input-otp": "^1.4.2",
     "lodash.debounce": "^4.0.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-otp-input-type": "^1.0.2",
     "react-scripts": "5.0.1"
   },
   "scripts": {

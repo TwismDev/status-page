@@ -102,7 +102,7 @@ const loadingTextStyle = {
 
 const suggestionListStyle = {
   position: 'absolute',
-  top: '100px', // just below .form-group (adjust as needed)
+  top: 'calc(100% + 4px)',
   width: '100%',
   maxHeight: '200px',
   overflowY: 'auto',
@@ -110,12 +110,14 @@ const suggestionListStyle = {
   border: '1px solid #ddd',
   backgroundColor: '#fff',
   zIndex: 999,
+  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
 };
 
 const suggestionItemStyle = {
   padding: '10px',
   borderBottom: '1px solid #ddd',
   cursor: 'pointer',
+  // backgroundColor: '#fff',
 };
 
 const suggestionTextStyle = {
