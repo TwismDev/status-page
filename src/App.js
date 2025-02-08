@@ -6,6 +6,12 @@ import { OTPInputField } from 'react-otp-input-type';
 import { createClient } from '@supabase/supabase-js';
 import { Auth } from '@supabase/auth-ui-react';
 
+const supabase = createClient(
+	process.env.REACT_APP_SUPABASE_URL,
+	process.env.REACT_APP_SUPABASE_ANON_KEY
+  );
+  
+
 function App() {
 	const [showForm, setShowForm] = useState(false);
 	const [isEmailValid, setIsEmailValid] = useState(false);
