@@ -234,7 +234,7 @@ function App() {
 									required
 									style={{ marginBottom: '15px' }}
 								/>
-								{!isVerifyClicked && (
+								{!isVerifyClicked && isEmailValid && (
 									<button
 										type='button'
 										className='button-29'
